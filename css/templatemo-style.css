@@ -1,14 +1,10 @@
-.center{
-	margin: 0 auto;
-}
-
 .form-section {
 	display: flex;
 	flex-direction: column;
 	/* justify-content: center; */
 	/* align-items: center; */
 	width: 100%;
-	height: 80vh;
+	height: 65vh;
  }
  .form-section .form-wrapper {
 	margin: 15px;
