@@ -90,9 +90,8 @@ function sendForm(event) {
 		document.querySelector('form').style.display = "none";
 		document.querySelector('.submitted').style.display = "flex";
 		console.log(
-			`Email: ${emailInput.value}\nИмя Фамилия: ${fioInput.value}\nТелефон: ${phoneInput.value}\nДата: ${dateInput.value}\nВремя: ${timeInput.value}`
+			`Имя: ${fioInput.value}\nТелефон: ${phoneInput.value}\n`//Email: ${emailInput.value}\nДата: ${dateInput.value}\nВремя: ${timeInput.value}
 		);
 	}
 }
-
-button.addEventListener("click", sendForm);
+// button.addEventListener("click", sendForm);
