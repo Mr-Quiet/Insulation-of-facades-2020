@@ -86,12 +86,12 @@ function sendForm(event) {
 	if (!validateInputs()) {
 		event.preventDefault();
 	} else {
-		event.preventDefault();
 		document.querySelector('form').style.display = "none";
 		document.querySelector('.submitted').style.display = "flex";
 		console.log(
-			`Имя: ${fioInput.value}\nТелефон: ${phoneInput.value}\n`//Email: ${emailInput.value}\nДата: ${dateInput.value}\nВремя: ${timeInput.value}
+			`Имя: ${fioInput.value}\nТелефон: ${phoneInput.value}\n` //Email: ${emailInput.value}\nДата: ${dateInput.value}\nВремя: ${timeInput.value}
 		);
 	}
 }
+
 // button.addEventListener("click", sendForm);
