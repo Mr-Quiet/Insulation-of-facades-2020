@@ -1,156 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+::-webkit-calendar-picker-indicator {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 4px;
+  cursor: pointer;
+}
+
 .form-section {
-	display: flex;
-	flex-direction: column;
-	/* justify-content: center; */
-	/* align-items: center; */
-	width: 100%;
-	height: 75vh;
- }
- .form-section .form-wrapper {
-	margin: 15px;
-	overflow-y: scroll;
-	margin-bottom: 0px;
- }
- .form-section .form-wrapper::-webkit-scrollbar {
-	display: none;
- }
- .form-section .form-wrapper form {
-	display: flex;
-	flex-direction: column;
-	background-color: #3b3b4c;
-	padding: 25px;
-	border-radius: 15px;
-	max-width: 560px;
-	line-height: 1.5;
- }
- .form-section .form-wrapper form h3 {
-	font-size: 22px;
-	text-align: center;
-	font-weight: 600;
-	color: white;
- }
- .form-section .form-wrapper form hr {
-	border: none;
-	border-bottom: 2px solid gray;
-	max-width: 320px;
-	width: 100%;
-	padding: 0 15px;
- }
- .form-section .form-wrapper form fieldset:not(:first-child) {
-	margin-top: 15px;
- }
- .form-section .form-wrapper form fieldset legend {
-	display: block;
-	font-weight: bold;
-	color: white;
-	margin-bottom: 5px;
-	font-size: 18px;
- }
- .form-section .form-wrapper form fieldset .error-type {
-	display: none;
-	margin-top: 5px;
-	color: red;
-	font-weight: bold;
- }
- .form-section .form-wrapper form fieldset .error-type:before {
-	content: "!";
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	width: 20px;
-	background-color: red;
-	color: white;
-	font-weight: bold;
-	margin-right: 10px;
-	-webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-			  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
- }
- .form-section .form-wrapper form fieldset input {
-	background-color: rgba(0, 0, 0, 0.7);
-	border: none;
-	outline: none;
-	padding: 10px;
-	border-radius: 10px;
-	width: 100%;
-	color: white;
-	box-shadow: 0 0 0 1px gray;
-	cursor: text;
- }
- .form-section .form-wrapper form fieldset input:valid {
-	box-shadow: 0 0 0 1px green;
- }
- .form-section .form-wrapper form fieldset input::-moz-placeholder {
-	color: rgba(255, 255, 255, 0.6);
- }
- .form-section .form-wrapper form fieldset input:-ms-input-placeholder {
-	color: rgba(255, 255, 255, 0.6);
- }
- .form-section .form-wrapper form fieldset input::placeholder {
-	color: rgba(255, 255, 255, 0.6);
- }
- .form-section .form-wrapper form fieldset input.invalid {
-	box-shadow: 0 0 0 1px red;
- }
- .form-section .form-wrapper form fieldset input:focus {
-	background-color: rgba(0, 0, 0, 0.5);
- }
- .form-section .form-wrapper form fieldset input:focus::-moz-placeholder {
-	color: rgba(255, 255, 255, 0.2);
- }
- .form-section .form-wrapper form fieldset input:focus:-ms-input-placeholder {
-	color: rgba(255, 255, 255, 0.2);
- }
- .form-section .form-wrapper form fieldset input:focus::placeholder {
-	color: rgba(255, 255, 255, 0.2);
- }
- .form-section .form-wrapper form button[type=submit] {
-	outline: none;
-	margin-top: 20px;
-	font-size: 16px;
-	font-weight: bolder;
-	border-radius: 10px;
-	border: none;
-	padding: 10px;
-	max-width: 150px;
-	width: 100%;
-	background-image: linear-gradient(-65deg, #30303e, black);
-	color: white;
-	margin-right: auto;
-	margin-left: auto;
-	box-shadow: 0 0 5px black;
-	cursor: pointer;
-	transition: box-shadow 0.2s linear;
- }
- .form-section .form-wrapper form button[type=submit]:hover {
-	box-shadow: 0 0 10px black;
- }
- .form-section .form-wrapper form button[type=submit]:disabled {
-	background-color: #1a1a1a;
-	color: gray;
-	cursor: default;
- }
- .form-section .form-wrapper form button[type=submit]:disabled:hover {
-	box-shadow: 0 0 5px black;
- }
- .form-section .form-wrapper .submitted {
-	display: none;
-	border: 1px solid lightgray;
-	border-radius: 10px;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 25px;
- }
- .form-section .form-wrapper .submitted svg {
-	max-width: 150px;
-	fill: green;
- }
- .form-section .form-wrapper .submitted .submitted-text {
-	font-weight: bold;
-	margin-top: 20px;
-	color: green;
-	font-size: 20px;
- }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.form-section .form-wrapper {
+  margin: 15px;
+  overflow-y: scroll;
+}
+.form-section .form-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.form-section .form-wrapper form {
+  display: flex;
+  flex-direction: column;
+  background-color: #3b3b4c;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 560px;
+  line-height: 1.5;
+}
+.form-section .form-wrapper form h3 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+.form-section .form-wrapper form hr {
+  border: none;
+  border-bottom: 2px solid gray;
+  max-width: 320px;
+  width: 100%;
+  padding: 0 15px;
+}
+.form-section .form-wrapper form fieldset:not(:first-child) {
+  margin-top: 15px;
+}
+.form-section .form-wrapper form fieldset legend {
+  display: block;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.form-section .form-wrapper form fieldset .error-type {
+  display: none;
+  margin-top: 5px;
+  color: red;
+  font-weight: bold;
+}
+.form-section .form-wrapper form fieldset .error-type:before {
+  content: "!";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  margin-right: 10px;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.form-section .form-wrapper form fieldset input {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  color: white;
+  box-shadow: 0 0 0 1px gray;
+  cursor: text;
+}
+.form-section .form-wrapper form fieldset input:valid {
+  box-shadow: 0 0 0 1px green;
+}
+.form-section .form-wrapper form fieldset input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-section .form-wrapper form fieldset input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-section .form-wrapper form fieldset input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.form-section .form-wrapper form fieldset input.invalid {
+  box-shadow: 0 0 0 1px red;
+}
+.form-section .form-wrapper form fieldset input:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.form-section .form-wrapper form fieldset input:focus::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.form-section .form-wrapper form fieldset input:focus:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.form-section .form-wrapper form fieldset input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+.form-section .form-wrapper form button[type=submit] {
+  outline: none;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bolder;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  max-width: 150px;
+  width: 100%;
+  background-image: linear-gradient(-65deg, #30303e, black);
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  box-shadow: 0 0 5px black;
+  cursor: pointer;
+  transition: box-shadow 0.2s linear;
+}
+.form-section .form-wrapper form button[type=submit]:hover {
+  box-shadow: 0 0 10px black;
+}
+.form-section .form-wrapper form button[type=submit]:disabled {
+  background-color: #1a1a1a;
+  color: gray;
+  cursor: default;
+}
+.form-section .form-wrapper form button[type=submit]:disabled:hover {
+  box-shadow: 0 0 5px black;
+}
+.form-section .form-wrapper .submitted {
+  display: none;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.form-section .form-wrapper .submitted svg {
+  max-width: 150px;
+  fill: green;
+}
+.form-section .form-wrapper .submitted .submitted-text {
+  font-weight: bold;
+  margin-top: 20px;
+  color: green;
+  font-size: 20px;
+}
 /*
 
 
